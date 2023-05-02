@@ -12,16 +12,91 @@
 </head>
 <body>
   <audio autoplay loop src="/src/background-music.mp3"></audio>
-  <h1 class="title">ELIGE TU PRIMER POKÉMON!</h1>
+  <h1 class="title">¡ELIGE TU PRIMER POKÉMON!</h1>
   <div class="main">
     <div class="pkb-container">
-    <img class="pokeball hvr-buzz" src="/src/pokeball.png" alt="pokeball">
-    <img class="pokeball hvr-buzz" src="/src/pokeball.png" alt="pokeball">
-    <img class="pokeball hvr-buzz" src="/src/pokeball.png" alt="pokeball">
+      <img class="pokeball hvr-buzz" id="pkb-bul" src="/src/pokeball.png" alt="pokeball">
+      <img class="pokeball hvr-buzz" id="pkb-squi" src="/src/pokeball.png" alt="pokeball">
+      <img class="pokeball hvr-buzz" id="pkb-char" src="/src/pokeball.png" alt="pokeball">
     </div>
   </div>
   <div class="text-container">
     <p class="text-principal">¡TU PROPIA LEYENDA POKÉMON ESTÁ A PUNTO DE COMENZAR!</p>
+  </div>
+  <div class="popup-container">
+    <div class="popup bulbasaur">
+      <div class="popup-img-container">
+        <img class="popup-img bul-img" src="/src/bulbasaur.png" alt="bulbasaur">
+      </div>
+      <div class="popup-info">
+        <div class="popup-desc">
+          <p class="description">Una rara semilla le fue plantada en el lomo al nacer. La planta brota y crece con este Pokémon. Puede sobrevivir largo tiempo sin probar bocado. Guarda energía en el bulbo de su espalda.</p>
+        </div>
+        <div class="popup-list">
+          <ul class="list">
+            <li class="list-item">Tipo: Planta/Veneno</li>
+            <li class="list-item">Especie: Pokémon Semilla</li>
+            <li class="list-item">Hábitat: Pradera</li>
+          </ul>
+        </div>
+        <div class="selection">
+          <p class="selection-text">Entonces, ¿quieres el POKÉMON   tipo PLANTA BULBASAUR?</p>
+          <div class="selection-option-container">
+            <span class="selection-option">SÍ</span>
+            <span class="selection-option">NO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup squirtle">
+      <div class="popup-img-container">
+        <img class="popup-img squi-img" src="/src/squirtle.png" alt="squirtle">
+      </div>
+      <div class="popup-info">
+        <div class="popup-desc">
+          <p class="description">Tras nacer, se le hincha el lomo y se le forma un caparazón. Echa potente espuma por la boca. Cuando se esconde en el caparazón, dispara agua a una presión increíble.</p>
+        </div>
+        <div class="popup-list">
+          <ul class="list">
+            <li class="list-item">Tipo: Agua</li>
+            <li class="list-item">Especie: Pokémon Tortuguita</li>
+            <li class="list-item">Hábitat: Agua Dulce</li>
+          </ul>
+        </div>
+        <div class="selection">
+          <p class="selection-text">Entonces, ¿quieres el POKÉMON   tipo AGUA SQUIRTLE?</p>
+          <div class="selection-option-container">
+            <span class="selection-option">SÍ</span>
+            <span class="selection-option">NO</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div class="popup charmander">
+        <div class="popup-img-container">
+          <img class="popup-img char-img" src="/src/charmander.png" alt="charmander">
+        </div>
+        <div class="popup-info">
+          <div class="popup-desc">
+            <p class="description">Este Pokémon nace con una llama en la punta de la cola. Si la llama se apagara, el Pokémon se debilitaría. Prefiere los sitios cálidos. Dicen que cuando llueve le sale vapor de la punta de la cola.</p>
+          </div>
+          <div class="popup-list">
+            <ul class="list">
+              <li class="list-item">Tipo: Fuego</li>
+              <li class="list-item">Especie: Pokémon Lagartija</li>
+              <li class="list-item">Hábitat: Montaña</li>
+            </ul>
+          </div>
+          <div class="selection">
+          <p class="selection-text">Entonces, ¿quieres el POKÉMON   tipo FUEGO CHARMANDER?</p>
+          <div class="selection-option-container">
+            <span class="selection-option">SÍ</span>
+            <span class="selection-option">NO</span>
+          </div>
+          </div>
+        </div>
+      </div>
   </div>
 </body>
 </html>

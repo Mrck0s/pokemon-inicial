@@ -5,6 +5,7 @@
 html{
   font-family: 'Pokemon', sans-serif;
   height: 100vh;
+  width: 100vw;
   background-image: url(/src/background.png);
   background-size: contain;
 }
@@ -27,6 +28,92 @@ html{
 .pokeball{
   height: 200px;
   width: 200px;
+  cursor: pointer;
+}
+.popup-container{
+  display: none;
+  position: fixed;
+  inset: 0 0 0 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000ce;
+}
+.popup{
+  margin: auto;
+  background-color: #dbdada;
+  height: 70%;
+  width: 70%;
+  border-radius: 1em;
+  border: 5px solid #7fa0e7; 
+  box-shadow: 0 0 0 2px #4d6aa8;
+}
+.bulbasaur{
+  display: none;
+}
+.squirtle{
+  display: none;
+}
+.charmander{
+  display: none;
+}
+.popup-img-container{
+  display: flex;
+  width: 40%;
+  height: 90%;
+  margin: auto 1%;
+  border-radius: 1em;
+}
+.popup-img{
+  width: 100%;
+  margin: auto;
+  background-color: #F0F0F0;
+  border-radius: 1em;
+}
+.bul-img{
+  border: 5px solid #5dce29; 
+  box-shadow: 0 0 0 2px #307013;
+}
+.squi-img{
+  border: 5px solid #2a4cbd; 
+  box-shadow: 0 0 0 2px #132a75;
+}
+.char-img{
+  border: 5px solid #ff9c4c; 
+  box-shadow: 0 0 0 2px #fa5514;
+}
+.popup-info{
+  width: 55%;
+  height: 90%;
+  margin: auto;
+  line-height: 20px;
+}
+.popup-desc{
+  margin-top: 10%;
+}
+.description{
+  font-style: italic;
+}
+.popup-list{
+  margin-top: 10%;
+}
+.list-item{
+  margin-top: 5%;
+}
+.selection{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+.selection-text{
+  width: 100%;
+}
+.selection-option-container{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 5% auto;
+}
+.selection-option{
   cursor: pointer;
 }
 .text-container{
