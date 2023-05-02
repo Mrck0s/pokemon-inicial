@@ -6,6 +6,7 @@ const popupBul = document.querySelector(".bulbasaur");
 const popupSqui = document.querySelector(".squirtle");
 const popupChar = document.querySelector(".charmander");
 const selections = document.querySelectorAll(".selection-option");
+const popupImg = document.querySelectorAll(".popup-img");
 
 const bulbasaurCries = ["/src/bulbasaur-cry-1.mp3", "/src/bulbasaur-cry-2.mp3", "/src/bulbasaur-cry-3.mp3"];
 const squirtleCries = ["/src/squirtle-cry-1.mp3", "/src/squirtle-cry-2.mp3", "/src/squirtle-cry-3.mp3"];

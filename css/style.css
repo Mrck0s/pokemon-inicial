@@ -46,6 +46,7 @@ html{
   border-radius: 1em;
   border: 5px solid #7fa0e7; 
   box-shadow: 0 0 0 2px #4d6aa8;
+  transition: all 0.5s;
 }
 .bulbasaur{
   display: none;
