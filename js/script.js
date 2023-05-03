@@ -7,6 +7,8 @@ const popupSqui = document.querySelector(".squirtle");
 const popupChar = document.querySelector(".charmander");
 const selections = document.querySelectorAll(".selection-option");
 const popupImg = document.querySelectorAll(".popup-img");
+const musicBtn = document.querySelector(".music-btn");
+const music = document.querySelector(".music"); 
 
 const bulbasaurCries = ["/src/bulbasaur-cry-1.mp3", "/src/bulbasaur-cry-2.mp3", "/src/bulbasaur-cry-3.mp3"];
 const squirtleCries = ["/src/squirtle-cry-1.mp3", "/src/squirtle-cry-2.mp3", "/src/squirtle-cry-3.mp3"];
@@ -45,3 +47,16 @@ selections.forEach(selection => {
     popupChar.style.display = "none";
   })
 });
+
+let isPlaying = false;
+musicBtn.addEventListener("click", () => {
+  if (isPlaying) {
+    music.pause();
+    musicBtn.classList.add("music-off");
+    isPlaying = false;
+  } else {
+    music.play();
+    musicBtn.classList.remove("music-off");
+    isPlaying = true;
+  }
+})
